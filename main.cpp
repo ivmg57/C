@@ -30,5 +30,9 @@ int main(){
     Figura fig;
     fig = c2;
     cout << fig.dibuja() << endl;
+    Figura* ptrF;
+    Circulo c3(3,3,6);
+    ptrF = &c3;
+    cout << ptrF->dibuja() << endl;
     return 0;
 }
