@@ -25,6 +25,10 @@ int main(){
     int* ptrZ = new int(35);
     cout << "El valor al cual apunta ptr2 es: " << *ptrZ << endl;
     Circulo* ptrC1 = new Circulo(1,1,7);
-    
+    cout << "Circunferencia del Circulo: " << ptrC1->circunferencia() << endl;
+    Circulo c2(2,2,8);
+    Figura fig;
+    fig = c2;
+    cout << fig.dibuja() << endl;
     return 0;
 }
